@@ -90,4 +90,3 @@ jobs:
           docker build -f order-platform-msa-mcp-server/Dockerfile -t order-test-ecr-repo:mcp-server .
           docker tag order-test-ecr-repo:mcp-server ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/order-test-ecr-repo:mcp-server
           docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/order-test-ecr-repo:mcp-server
-
